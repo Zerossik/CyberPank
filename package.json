@@ -1,6 +1,6 @@
 {
   "name": "CyberPank",
-  "homepage": "https://Zerossik.github.io/CyberPank",
+  "homepage": "https://Zerossik.github.io/CyberPank/",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
