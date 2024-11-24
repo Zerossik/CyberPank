@@ -1,5 +1,5 @@
 {
-  "name": "CyberPank",
+  "name": "cyberpank",
   "homepage": "https://Zerossik.github.io/CyberPank/",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
@@ -9,10 +9,9 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
-    "parcel": "^2.12.0",
-    "posthtml-include": "^2.0.1"
-  },
-  "alias": {
-    "images": "./public/images"
+    "parcel": "^2.13.0",
+    "posthtml-include": "^2.0.1",
+    "sass": "^1.81.0",
+    "svgo": "^3.3.2"
   }
 }
