@@ -1,0 +1,49 @@
+@use '../mixin/mexins' as m;
+
+.about {
+  margin-bottom: 70px;
+}
+.about > .container {
+  @include m.mediaMax(592px) {
+    padding: 70px 0 0 0;
+  }
+}
+.about--text-wrap {
+  padding: 0 12px;
+}
+.about__title {
+  margin-bottom: 20px;
+
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.about__description {
+  margin-bottom: 65px;
+
+  line-height: 32px;
+  color: #777777;
+  text-shadow: 2px 2px 5px #777777;
+}
+.about__description--blue {
+  color: var(--hoverAndFocus-color);
+}
+.about__image-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.about__image:not(:last-child) {
+  clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0% 100%, 0 30%);
+
+  @include m.mediaMin(1920px) {
+    clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0% 100%, 0 20%);
+  }
+  @include m.mediaMin(1024px) {
+    padding: 40px 40px 32px 40px;
+  }
+}
+.about__image:last-child {
+  clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0% 100%, 0 10%);
+}
