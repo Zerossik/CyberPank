@@ -29,19 +29,19 @@
   @include m.retina {
     background-image: url(../../public/images/bg_images/hero_mobile_640.jpg);
   }
-
+  @include m.mediaMin(320px) {
+    background-image: url(../../public/images/bg_images/hero_bg_1024.jpg);
+  }
   @include m.mediaMax(592px) {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
   }
-  @include m.mediaMin(320px) {
-    background-image: url(../../public/images/bg_images/hero_bg_1024.jpg);
+  @include m.mediaMin(592px) {
     @include m.retina {
       background-image: url(../../public/images/bg_images/hero_bg_1024@x2.jpg);
     }
   }
   @include m.mediaMin(1024px) {
     background-image: url(../../public/images/bg_images/hero_bg_1920.jpg);
-    height: 100vh;
     @include m.retina {
       background-image: url(../../public/images/bg_images/hero_bg_1920@2x.jpg);
     }

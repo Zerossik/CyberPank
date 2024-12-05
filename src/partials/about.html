@@ -14,33 +14,37 @@
     </div>
 
     <div class="about__image-wrap">
+      <!-- до 592 px ставлю зображення 640, вище і х2 ставлю 960 -->
       <img
         srcset="
-          ../public/images/Rectangle62.jpg    300w,
-          ../public/images/Rectangle62@2x.jpg 600w
+          ../public/images/Rectangle62.jpg     640w,
+          ../public/images/Rectangle602@2x.jpg 960w
         "
-        sizes="(max-width: 320px) 300px, (min-width: 320px) 600px"
+        sizes="(max-width: 592px) 592px, (min-width: 592px) 960px"
         alt="Нічне місто"
         class="about__image"
       />
-      <img
+      <!-- <img
         srcset="
-          ../public/images/Rectangle63.jpg    300w,
-          ../public/images/Rectangle63@2x.jpg 600w
+          ../public/images/Rectangle63.jpg         300w,
+          ../public/images/Rectangle63@2x.jpg      600w,
+          ../public/images/tablet/Rectangle603.jpg 460w
         "
-        sizes="(max-width: 320px) 300px, (min-width: 320px) 600px"
+        sizes="(max-width: 320px) 300px, (min-width: 320px) and (max-width: 592px) 640px, (min-width: 593px) 460px"
         alt="Нічне місто"
         class="about__image"
-      />
-      <img
+      /> -->
+
+      <!-- <img
         srcset="
-          ../public/images/Rectangle61.jpg    300w,
-          ../public/images/Rectangle61@2x.jpg 600w
+          ../public/images/Rectangle61.jpg         300w,
+          ../public/images/Rectangle61@2x.jpg      640w,
+          ../public/images/tablet/Rectangle602.jpg 952w
         "
-        sizes="(max-width: 320px) 300px, (min-width: 320px) 600px"
+        sizes="(max-width: 320px) 300px, (min-width: 320px) and (max-width: 592px) 640px, (min-width: 593px) 952px"
         alt="Нічне місто"
-        class="about__image"
-      />
+        class="about__image about__image--wide"
+      /> -->
     </div>
   </div>
 </section>
